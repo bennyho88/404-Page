@@ -7,6 +7,8 @@ body {
     text-align: center;
     position: relative;
     top: 150px;
+    animation-duration: 3s;
+    animation-name: slidein;
     
 }
 
@@ -24,10 +26,28 @@ p {
 .button {
     padding: 10px;
     border-radius: 2px;
+    font-weight: bold;
+    background-color: #34252f;
+    color: white;
 }
 
 .button:hover {
-    background-color: #393B3D;
+    background-color: #34252f;
     color: white;
     border: 2px black solid;
 }
+
+
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
